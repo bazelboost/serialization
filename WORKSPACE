@@ -16,6 +16,22 @@ http_archive(
 )
 
 http_archive(
+	name = "com_github_bazelboost_core",
+	strip_prefix = "core-boost-1.65.1",
+	urls = [
+		"https://github.com/bazelboost/core/archive/boost-1.65.1.tar.gz"
+	],
+)
+
+http_archive(
+	name = "com_github_bazelboost_integer",
+	strip_prefix = "integer-boost-1.65.1",
+	urls = [
+		"https://github.com/bazelboost/integer/archive/boost-1.65.1.tar.gz"
+	],
+)
+
+http_archive(
 	name = "com_github_bazelboost_mpl",
 	strip_prefix = "mpl-boost-1.65.1",
 	urls = [
@@ -24,10 +40,26 @@ http_archive(
 )
 
 http_archive(
-	name = "com_github_bazelboost_iterator",
-	strip_prefix = "iterator-boost-1.65.1",
+	name = "com_github_bazelboost_smart_ptr",
+	strip_prefix = "smart_ptr-boost-1.65.1",
 	urls = [
-		"https://github.com/bazelboost/iterator/archive/boost-1.65.1.tar.gz"
+		"https://github.com/bazelboost/smart_ptr/archive/boost-1.65.1.tar.gz"
+	],
+)
+
+http_archive(
+	name = "com_github_bazelboost_io",
+	strip_prefix = "io-boost-1.65.1",
+	urls = [
+		"https://github.com/bazelboost/io/archive/boost-1.65.1.tar.gz"
+	],
+)
+
+http_archive(
+	name = "com_github_bazelboost_static_assert",
+	strip_prefix = "static_assert-boost-1.65.1",
+	urls = [
+		"https://github.com/bazelboost/static_assert/archive/boost-1.65.1.tar.gz"
 	],
 )
 
@@ -40,10 +72,42 @@ http_archive(
 )
 
 http_archive(
-	name = "com_github_bazelboost_align",
-	strip_prefix = "align-boost-1.65.1",
+	name = "com_github_bazelboost_detail",
+	strip_prefix = "detail-boost-1.65.1",
 	urls = [
-		"https://github.com/bazelboost/align/archive/boost-1.65.1.tar.gz"
+		"https://github.com/bazelboost/detail/archive/boost-1.65.1.tar.gz"
+	],
+)
+
+http_archive(
+	name = "com_github_bazelboost_spirit",
+	strip_prefix = "spirit-boost-1.65.1",
+	urls = [
+		"https://github.com/bazelboost/spirit/archive/boost-1.65.1.tar.gz"
+	],
+)
+
+http_archive(
+	name = "com_github_bazelboost_iterator",
+	strip_prefix = "iterator-boost-1.65.1",
+	urls = [
+		"https://github.com/bazelboost/iterator/archive/boost-1.65.1.tar.gz"
+	],
+)
+
+http_archive(
+	name = "com_github_bazelboost_array",
+	strip_prefix = "array-boost-1.65.1",
+	urls = [
+		"https://github.com/bazelboost/array/archive/boost-1.65.1.tar.gz"
+	],
+)
+
+http_archive(
+	name = "com_github_bazelboost_move",
+	strip_prefix = "move-boost-1.65.1",
+	urls = [
+		"https://github.com/bazelboost/move/archive/boost-1.65.1.tar.gz"
 	],
 )
 
@@ -56,9 +120,41 @@ http_archive(
 )
 
 http_archive(
-	name = "com_github_bazelboost_integer",
-	strip_prefix = "integer-boost-1.65.1",
+	name = "com_github_bazelboost_unordered",
+	strip_prefix = "unordered-boost-1.65.1",
 	urls = [
-		"https://github.com/bazelboost/integer/archive/boost-1.65.1.tar.gz"
+		"https://github.com/bazelboost/unordered/archive/boost-1.65.1.tar.gz"
+	],
+)
+
+http_archive(
+	name = "com_github_bazelboost_optional",
+	strip_prefix = "optional-boost-1.65.1",
+	urls = [
+		"https://github.com/bazelboost/optional/archive/boost-1.65.1.tar.gz"
+	],
+)
+
+http_archive(
+	name = "com_github_bazelboost_utility",
+	strip_prefix = "utility-boost-1.65.1",
+	urls = [
+		"https://github.com/bazelboost/utility/archive/boost-1.65.1.tar.gz"
+	],
+)
+
+http_archive(
+	name = "com_github_bazelboost_throw_exception",
+	strip_prefix = "throw_exception-boost-1.65.1",
+	urls = [
+		"https://github.com/bazelboost/throw_exception/archive/boost-1.65.1.tar.gz"
+	],
+)
+
+http_archive(
+	name = "com_github_bazelboost_variant",
+	strip_prefix = "variant-boost-1.65.1",
+	urls = [
+		"https://github.com/bazelboost/variant/archive/boost-1.65.1.tar.gz"
 	],
 )

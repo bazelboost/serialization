@@ -1,0 +1,24 @@
+load("@rules_cc//cc:defs.bzl", "cc_library")
+
+cc_library(
+    name = "serialization",
+    visibility = ["//visibility:public"],
+    includes = ["include"],
+    hdrs = glob(["include/**/*.hpp", "include/**/*.ipp"]),
+    srcs = glob(["src/**/*.cpp", "src/**/*.ipp"]),
+    deps = [
+        "@boost//config",
+        "@boost//detail",
+        "@boost//assert",
+        "@boost//integer",
+        "@boost//static_assert",
+        "@boost//io",
+        "@boost//core",
+        "@boost//iterator",
+        "@boost//utility",
+        "@boost//smart_ptr",
+        "@boost//array",
+        "@boost//spirit",
+        "@boost//function",
+    ],
+)
